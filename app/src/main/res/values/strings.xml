@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Exhibition Guide</string>
+    <string name="logo_description">Exhibition Logo</string>
+    <string-array name="optionsMain">
+        <item>EXHIBITION SELECTION</item>
+    </string-array>
+
+    <string-array name="optionsExhibition">
+        <item>Art Gallery</item>
+        <item>WWI exhibition</item>
+        <item>Exploring the space</item>
+        <item>Visual Show</item>
+    </string-array>
+
+    <string-array name="optionsDate">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+
+    <string-array name="optionsTime">
+        <item>9:00</item>
+        <item>9:30</item>
+        <item>10:00</item>
+        <item>10:30</item>
+        <item>11:00</item>
+        <item>11:30</item>
+        <item>12:00</item>
+        <item>12:30</item>
+        <item>13:00</item>
+        <item>13:30</item>
+        <item>14:00</item>
+        <item>14:30</item>
+        <item>15:00</item>
+        <item>15:30</item>
+        <item>16:00</item>
+        <item>16:30</item>
+        <item>17:00</item>
+        <item>17:30</item>
+        <item>18:00</item>
+        <item>18:30</item>
+        <item>19:00</item>
+        <item>19:30</item>
+        <item>20:00</item>
+        <item>20:30</item>
+    </string-array>
+</resources>

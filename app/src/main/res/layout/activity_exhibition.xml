@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExhibitionActivity">
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="wrap_content"
+        android:layout_height="227dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/art_gallery" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/photo"
+        tools:text="TextView" />
+
+    <TextView
+        android:id="@+id/decsription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:text="text"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <Spinner
+        android:id="@+id/list_date"
+        android:layout_width="170dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/teal_200"
+        android:entries="@array/optionsDate"
+        app:layout_constraintEnd_toEndOf="@+id/decsription"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="@+id/decsription"
+        app:layout_constraintTop_toBottomOf="@+id/decsription"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/dayText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:text="Day"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/list_date"
+        app:layout_constraintEnd_toStartOf="@+id/list_date"
+        app:layout_constraintTop_toTopOf="@+id/list_date"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/timeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="From"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/list_time"
+        app:layout_constraintEnd_toStartOf="@+id/list_time"
+        app:layout_constraintTop_toTopOf="@+id/list_time"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/visitorView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:text="Visitor"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/visitorText"
+        app:layout_constraintEnd_toStartOf="@+id/visitorText"
+        app:layout_constraintTop_toTopOf="@+id/visitorText"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+    <Spinner
+        android:id="@+id/list_time"
+        android:layout_width="94dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/purple_200"
+        android:entries="@array/optionsTime"
+        app:layout_constraintEnd_toEndOf="@+id/list_date"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/list_date"
+        app:layout_constraintTop_toBottomOf="@+id/list_date" />
+
+    <EditText
+        android:id="@+id/visitorText"
+        android:layout_width="168dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/list_time"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/list_time"
+        app:layout_constraintTop_toBottomOf="@+id/list_time" />
+
+    <EditText
+        android:id="@+id/total"
+        android:layout_width="167dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/teal_200"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/visitorText"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/visitorText"
+        app:layout_constraintTop_toBottomOf="@+id/visitorText" />
+
+    <TextView
+        android:id="@+id/totalLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:textSize="20dp"
+        android:text="Price"
+        app:layout_constraintBottom_toBottomOf="@+id/total"
+        app:layout_constraintEnd_toStartOf="@+id/total"
+        app:layout_constraintTop_toTopOf="@+id/total"
+        app:layout_constraintVertical_bias="0.526" />
+
+    <TextView
+        android:id="@+id/endTimeView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="To"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/list_time"
+        app:layout_constraintStart_toEndOf="@+id/list_time"
+        app:layout_constraintTop_toTopOf="@+id/list_time"
+        app:layout_constraintVertical_bias="0.058" />
+
+    <EditText
+        android:id="@+id/endTime"
+        android:layout_width="90dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="20dp"
+        android:background="@color/purple_200"
+        android:ems="10"
+        android:inputType="time"
+        app:layout_constraintBottom_toBottomOf="@+id/endTimeView"
+        app:layout_constraintStart_toEndOf="@+id/endTimeView"
+        app:layout_constraintTop_toTopOf="@+id/endTimeView"
+        app:layout_constraintVertical_bias="0.062" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
